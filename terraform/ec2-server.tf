@@ -36,4 +36,8 @@ resource "aws_security_group" "jump-sg" {
 
 output publicip {
     value = aws_instance.jumpserver.public_ip
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e6b670cfc00653187ea06a625d15142fb770735d
