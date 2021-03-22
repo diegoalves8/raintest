@@ -9,10 +9,10 @@ resource "aws_ecs_cluster" "rain-cluster" {
 
 resource "aws_ecs_task_definition" "microservice1" {
   family = "microservice1"
-  requires_compatibilities = "FARGATE"
   container_definitions = jsonencode([
     {
       name      = "first"
+      requires_compatibilities = FARGATE
       image     = "service-first"
       cpu       = 10
       memory    = 512
