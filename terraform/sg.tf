@@ -13,7 +13,11 @@ resource "aws_security_group" "rain-alb-sg" {
         protocol = "tcp"
         cidr_blocks = ["0.0.0.0/0"]
 }
+<<<<<<< HEAD
 
+=======
+}
+>>>>>>> e6b670cfc00653187ea06a625d15142fb770735d
 resource "aws_security_group" "rain-ecs-sg" {
     name = "rain-ecs-sg"
     description = "allow http access from our ALB to ecs cluster"
@@ -64,4 +68,9 @@ resource "aws_security_group" "rain-ecs-sg" {
         to_port = 8088
         protocol = "tcp"
         cidr_blocks = ["0.0.0.0/0"]
+<<<<<<< HEAD
     }
+=======
+    }
+}
+>>>>>>> e6b670cfc00653187ea06a625d15142fb770735d
