@@ -15,7 +15,7 @@ resource "aws_vpc" "rain" {
 resource "aws_subnet" "sub1-rain" {
   vpc_id     = aws_vpc.rain.id
   cidr_block = "10.255.140.0/24"
-  availability_zone = "us-east-1b"
+  availability_zone = "us-east-2b"
 
   tags = {
     Name = "Main"
@@ -27,7 +27,7 @@ resource "aws_subnet" "sub1-rain" {
 resource "aws_subnet" "sub2-rain" {
   vpc_id     = aws_vpc.rain.id
   cidr_block = "10.255.141.0/24"
-  availability_zone = "us-east-1a"
+  availability_zone = "us-east-2a"
 
   tags = {
     Name = "Main"
@@ -51,10 +51,6 @@ resource "aws_internet_gateway" "rain-igw" {
 resource "aws_route_table" "rain-rtb" {
   vpc_id = aws_vpc.rain.id
 
-  route {
-    cidr_block = "10.255.0.0/16"
-    gateway_id = aws_internet_gateway.rain-igw.id
-  }
   route {
     cidr_block = "0.0.0.0/0"
     gateway_id = aws_internet_gateway.rain-igw.id
