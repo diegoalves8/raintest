@@ -1,11 +1,11 @@
 
 ############## AWS ACCESS
 variable "aws-access" {
-  default = "AKIAXWNUSCP7C7TUXQON"
+  default = ""
 }
 
 variable "aws-secret" {
-  default = "YbFbHBJxOaHAs2qPlN60zVV3K7Zd2cYOgptqVtst"
+  default = ""
 }
 ############# END AWS ACCESS
 
