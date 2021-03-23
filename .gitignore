@@ -2,3 +2,4 @@ terraform/.terraform/providers/registry.terraform.io/hashicorp/aws/3.33.0/linux_
 aws-automation/.terraform/*
 aws-automation/terraform.tfstate
 aws-automation/terraform.tfstate.backup
+aws-automation/.terraform/providers/registry.terraform.io/hashicorp/aws/3.33.0/linux_amd64/terraform-provider-aws_v3.33.0_x5
